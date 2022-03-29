@@ -40,7 +40,7 @@ int main(){
 		
 	}
 	
-	FILE *fp = fopen("functions_lab4.txt", "w");
+	FILE *fp = fopen("project01(lab4).txt", "w");
 	
 	fprintf(fp, "%d\n", y1);
 	fprintf(fp, "%d\n", y2);
