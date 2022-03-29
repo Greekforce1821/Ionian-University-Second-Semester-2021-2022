@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(int argc, char** argv){
+int main(){
 	
 	srand(80);
 	int i=0, result=0;
