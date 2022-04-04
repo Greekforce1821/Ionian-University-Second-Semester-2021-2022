@@ -17,7 +17,6 @@ int main(){
 	
 	for (j=0; j<=100; j++){
 		counter = 0; 
-		//inner loop - i
 		for(i=0; i<=10; i++){
 			r = rand()%2;
 			printf("%d\n", r);
