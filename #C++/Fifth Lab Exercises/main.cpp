@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 #include "Truck.h"
 #include "Mcycle.h"
 #include "Car.h"
