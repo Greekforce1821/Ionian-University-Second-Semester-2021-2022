@@ -4,10 +4,8 @@ using namespace std;
 
 Class Mcycle{
               private:
-                      int year; // έτος κατασκευής
-              protected:
-                       string number; // πινακίδα κυκλοφορίας
-                       string owner; // κάτοχος ΙΧ
+                      int sidecar; // μεταβλητή για το αν το δίκυκλο έχει sidecar
+
               public:
                      Mcycle();
                      Mcycle(string owner, string number, int year);
