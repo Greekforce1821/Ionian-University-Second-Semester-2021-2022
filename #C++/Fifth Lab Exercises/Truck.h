@@ -1,8 +1,9 @@
 #include <iostream>
+#include "Vehicle.h"
 
 using namespace std;
 
-Class Truck{
+Class Truck : public Vehicle {
               private:
                       int axis; // μεταβλητή για τον αριθμό τον αξόνων
 
