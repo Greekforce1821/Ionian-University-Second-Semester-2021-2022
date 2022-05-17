@@ -61,7 +61,7 @@ int main(){
 			}
 			else if(x<500 && y>500){
 				position1 = x;
-				posistion2 = y+1;
+				position2 = y+1;
 			}
 			else if(x>500 && y<500){
 				position1 = x;
@@ -117,19 +117,19 @@ int main(){
 		printf("%d\n", position_tails);
 		
 		
-		sum_heads = sum_heads + position_h;
+		sum_heads = sum_heads + position_heads;
 		sqdiff_heads = sqdiff_heads + (position_heads - mn) * (position_heads - mn);
 		
 		
-		sum_tails = sum_tails + position_t;
+		sum_tails = sum_tails + position_tails;
 		sqdiff_tails = sqdiff_tails + (position_tails - mn) * (position_tails - mn);
 		
 		
-		mn = (sum_h + sum_t)/1000;
+		mn = (sum_heads + sum_tails)/1000;
 		printf("%f\n", mn);
 		
 			
-		var = (sqdiff_h + sqdiff_t)/1000;
+		var = (sqdiff_heads + sqdiff_tails)/1000;
 		printf("%f\n", var);
 		
 	}
