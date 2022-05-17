@@ -53,7 +53,7 @@ int main(){
 			
 			if(x>500 && y>500){
 				position1 = x+1;
-				posistion2 = y;
+				position2 = y;
 			}
 			else if(x<500 && y<500){
 				position1 = x-1;
@@ -78,26 +78,24 @@ int main(){
 	
 	FILE *fp;
 	fp = fopen("walkers_eighth_lab_exercise.txt", "w");
-	fprintf(fp, "%d\n", pos1);
-	fprintf(fp, "%d\n", pos2);
+	fprintf(fp, "%d\n", position1);
+	fprintf(fp, "%d\n", position2);
 	
 	//for separate positions into separate files
 	FILE *fp1;
 	fp1 = fopen("walkers_eighth_lab_exercise_1.txt", "w");
-	fprintf(fp1, "%d\n", pos1);
+	fprintf(fp1, "%d\n", position1);
 	
 	FILE *fp2;
 	fp2 = fopen("walkers_eighth_lab_exercise_2.txt", "w");
-	fprintf(fp2, "%d\n", pos2);
-	
-
+	fprintf(fp2, "%d\n", position2);
 	
 	
-	res_heads = rand()%100 +1;
+	results_heads = rand()%100 +1;
 	printf("The random heads result is: %d\n", results_heads);
 			
 	
-	res_tails = rand()%100 +1;
+	results_tails = rand()%100 +1;
 	printf("The random tails result is: %d\n", results_tails);
 	
 	for(k=0; k<=1000; k++){
