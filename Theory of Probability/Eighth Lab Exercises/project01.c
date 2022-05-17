@@ -16,7 +16,7 @@ int i; // first loop
 int j; //second loop
 int position2; 
 
-//variables for subquery 3
+
 int h = 0; // counter for Heads
 int t = 0; // counter for Tails
 
