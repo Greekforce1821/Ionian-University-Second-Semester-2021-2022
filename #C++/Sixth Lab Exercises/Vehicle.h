@@ -4,7 +4,7 @@ using namespace std;
 
 Class Vehicle{
               private:
-                      int year; // έτος κατασκευή
+                      int year; // έτος κατασκευής
                       string number; // πινακίδα κυκλοφορίας
                       string owner; // κάτοχος ΙΧ
               public:
