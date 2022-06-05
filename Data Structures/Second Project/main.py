@@ -6,6 +6,7 @@ from re import X
 import time
 from tkinter import Y
 from matplotlib import pyplot as plt
+import sys
 
 
 tm_spnd = 0.0                               #tm_spnd calculates the time which was spent while inserting the data to the Node
