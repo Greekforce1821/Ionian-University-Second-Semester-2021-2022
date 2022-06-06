@@ -198,6 +198,14 @@ while ch != "0":                               #While the choice is different fr
             print(("Max Grade: %.2f") % (maxGrade(root)))
     else:
         print("Try again.")
+    print("-------------------Menu-----------------------")
+    print("1. Add in order")
+    print("2. Show in order")
+    print("3. Find student by AM")
+    print("4. Show last student by AM")
+    print("5. Show maximum grade")
+    print("0. Exit")
+    ch = input("Choice: ").strip()
     
        
 #Graphical Illustration
