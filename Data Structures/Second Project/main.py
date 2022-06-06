@@ -201,9 +201,9 @@ while ch != "0":                               #While the choice is different fr
     print("-------------------Menu-----------------------")
     print("1. Add in order")
     print("2. Show in order")
-    print("3. Find student by AM")
-    print("4. Show last student by AM")
-    print("5. Show maximum grade")
+    print("3. Find student by ID")
+    print("4. Show last student by Grade")
+    print("5. Show Maximum Grade")
     print("0. Exit")
     ch = input("Choice: ").strip()
     
