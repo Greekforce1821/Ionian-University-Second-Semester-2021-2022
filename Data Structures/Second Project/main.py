@@ -18,7 +18,7 @@ with open('MOCK_DATA.csv', newline='') as file:       #Opening the .csv file and
     reader = csv.reader(file)
     header = next(reader) 
         
-    for row in reader:
+    for row in reader:                      #Seperating the data such as the ID, the First Name, the Last Name and the Grade in 4 rows at the dataRecord array.
         id = int(row[0])
         fn = str(row[1])
         ln = str(row[2])
@@ -44,10 +44,10 @@ m = 0                                       #Creating a counter m for the dataRe
         
 def Node():                                 #This function Node stores the data which was given by the user in a specific array called dataRecord.
     r = node()
-    r.fID = dataRecord[x][0]                   #The variable r.fID corresponds to the first value of the dataRecord Array
-    r.fn = dataRecord[y][1]                    #The variable r.fn corresponds to the second value of the dataRecord Array
-    r.ln = dataRecord[z][2]                    #The variable r.ln corresponds to the third value of the dataRecord Array
-    r.gr = float(dataRecord[m][3])             #The variable r.gr corresponds to the forth value of the dataRecord Array            
+    r.fID = dataRecord[x][0]                #The variable r.fID corresponds to the first value of the dataRecord Array
+    r.fn = dataRecord[y][1]                 #The variable r.fn corresponds to the second value of the dataRecord Array
+    r.ln = dataRecord[z][2]                 #The variable r.ln corresponds to the third value of the dataRecord Array
+    r.gr = float(dataRecord[m][3])          #The variable r.gr corresponds to the forth value of the dataRecord Array            
     return r
 
 def addInOrder(root,new):                   #This function addInOrder sorts the data from the array in order.                    
@@ -99,7 +99,7 @@ def InOrder(root):                          #The function InOrder traverses the 
             
 
      
-def findByID(root,fID):                      #This function findById runs a search of the entered ID by the user and tries to return it if there is inside the tree.
+def findByID(root,fID):                     #This function findById runs a search of the entered ID by the user and tries to return it if there is inside the tree.
     result = None
     
     if root != None:
@@ -111,14 +111,14 @@ def findByID(root,fID):                      #This function findById runs a sear
             result = findByID(root.right, fID)
     return result
 
-def maxID(root):                                             #The function maxID corresponds with the maximum grade of all the students from the .csv file
+def maxID(root):                             #The function maxID corresponds with the maximum grade of all the students from the .csv file
     if root.right == None:
         result = root
     else:
         result = maxID(root.right)
     return result
 
-def maxGrade(root):                                           #The function maxGrade calculates the maximum grade of all the students from the .csv file
+def maxGrade(root):                          #The function maxGrade calculates the maximum grade of all the students from the .csv file
     result = -1
     
     if root != None:
@@ -132,17 +132,17 @@ def maxGrade(root):                                           #The function maxG
 
 root = None
 
-print("---------- Menu ----------")                            #This is the GUI of the program in order to interact with the user and offer him the options that he would like to run.
+print("---------- Menu ----------")           #This is the GUI of the program in order to interact with the user and offer him the options that he would like to run.
 print("1. Add in Order")
 print("2. Show in Order")
 print("3. Find Student by Grade")
 print ("4. Show Last Student by Grade")  
 print("5. Show Maximum Grade")
 print ("0. Exit")  
-ch = input("Choice: ").strip()                                 #Here the program asks from the user to enter a number in order to choose a specific option.
+ch = input("Choice: ").strip()                 #Here the program asks from the user to enter a number in order to choose a specific option.
 
-while ch != "0":                                               #While the choice is different from the 0 the program starts.
-    if ch == "1":                                              #While the choice is matching with the 1 the program starts the time and adding in order the options from the .csv file
+while ch != "0":                               #While the choice is different from the 0 the program starts.
+    if ch == "1":                              #While the choice is matching with the 1 the program starts the time and adding in order the options from the .csv file
         starting = time.time()
         temp = Node()
         if root == None:
@@ -160,8 +160,8 @@ while ch != "0":                                               #While the choice
         counter = counter + 1
         end = time.time()
         spnd_time = end - starting
-         
-    elif ch == "2":
+          
+    elif ch == "2":                                             #If the choice is 2 then the program pops up a message telling to the user to enter his input if he/she wishes to select the PreOrder, the Postorder or the Inorder method.
         print ("Choose which way you wish to order the data from the .csv file.")
         print (" ---------- Menu ----------")
         print (" 1. Using the PreOrder method. ")
