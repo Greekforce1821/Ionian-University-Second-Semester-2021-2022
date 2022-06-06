@@ -132,7 +132,7 @@ def maxGrade(root):                          #The function maxGrade calculates t
 
 root = None
 
-print("---------- Menu ----------")           #This is the GUI of the program in order to interact with the user and offer him the options that he would like to run.
+print("---------- Menu ----------")            #This is the GUI of the program in order to interact with the user and offer him the options that he would like to run.
 print("1. Add in Order")
 print("2. Show in Order")
 print("3. Find Student by Grade")
