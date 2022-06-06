@@ -1,3 +1,11 @@
+from itertools import count
+import os
+import csv
+from pprint import pprint
+from re import X
+import time
+from tkinter import Y
+from matplotlib import pyplot as plt
 import sys
 
 class TreeNode(object):                                    #Creation of a Node Tree
